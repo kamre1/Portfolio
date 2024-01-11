@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="../images/logo-portfoilo-website.png">
+    <title>Portfolio</title>
+    <style>
+ 
+
+  </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+  
+    <nav class="flex items-center justify-between bg-[#081B33] h-[64px] p-2 lg:p-8 fixed w-full z-50">
+      <h2 class="font-bold text-lg lg:text-2xl text-white cursor-pointer">Md Kamre Alam</h2>
+      <div class="lg:hidden">
+          <button onclick="toggleMenu()" class="text-white">
+              <span id="menuIcon">☰</span>
+          </button>
+      </div>
+      <ul class="hidden lg:flex font-medium gap-4 cursor-pointer text-white lg:text-lg">
+          <div><a href="#Home">Home</a></div>
+          <div><a href="#About">About</a></div>
+          <div><a href="#Skill">Skill</a></div>
+          <div><a href="#Education">Education</a></div>
+          <div><a href="#Project">Project</a></div>
+          <div><a href="#Contact">Contact</a></div>
+      </ul>
+  </nav>
+  
+  <ul id="dropdownMenu" class="lg:hidden pl-4 bg-[#081B33] text-white mt-14 space-y-2 hidden fixed w-full">
+      <div><a href="#Home">Home</a></div>
+      <div><a href="#About">About</a></div>
+      <div><a href="#Skill">Skill</a></div>
+      <div><a href="#Education">Education</a></div>
+      <div><a href="#Project">Project</a></div>
+      <div><a href="#Contact">Contact</a></div>
+  </ul>
+  
+  <script>
+      function toggleMenu() {
+          var dropdownMenu = document.getElementById('dropdownMenu');
+          var menuIcon = document.getElementById('menuIcon');
+  
+          dropdownMenu.classList.toggle('hidden');
+          menuIcon.innerText = dropdownMenu.classList.contains('hidden') ? '☰' : '✕';
+      }
+  </script>
+
+    <div class="bg-[#081b29]">
+      <!-- Home Section -->
+      <div>
+        <div
+        class="flex flex-wrap items-center justify-center lg:justify-between bg-[#081b29]  text-[#ededed] lg:px-20 px-8 pt-20 pb-5" id="Home">
+        <div>
+          <div class="">
+          <div class="  lg:hidden lg:h-96 lg:w-96 md:h-72 md:w-72 w-64 h-64 mb-[45px] mt-[174px] ">
+                <img src="../images/PortFolio image.png" alt="">
+           </div>
+          <h3 class="font-bold lg:text-[32px] md:text-[24px] sm:text-[20px] text-[16px]">Hello, It's Me</h3>
+          <h1 class="font-bold lg:text-[64px] md:text-[40px] sm:text-[28px] text-[20px]">Md Kamre Alam</h1>
+          <h3 id="dynamicText" class="font-bold lg:text-[32px] md:text-[24px] sm:text-[20px] text-[16px]">
+            And I'm a <span class="text-[#32d59e]" id="dynamicContent"></span>
+          </h3>
+          <p class="font-medium lg:text-[20px] md:text-[18px] sm:text-[16px] text-[15px]">
+            I'm a web Designer with extensive experience <br />
+            expertise is to create and website design, <br />Frontend design
+            many more....
+          </p>
+          <div class="flex gap-5 mt-7 mb-7 justify-center lg:justify-start">
+            <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.facebook.com/profile.php?id=100080366996248" target="_blank">
+              <i class="bx bxl-facebook" style="color: #32d59e"></i>
+            </a>
+            <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.instagram.com/mdkamre6599/" target="_blank">
+              <i class="bx bxl-instagram" style="color: #32d59e"></i>
+            </a>
+            <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://github.com/kamre1" target="_blank">
+              <i class="bx bxl-github" style="color: #32d59e"></i>
+            </a>
+            <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.linkedin.com/in/md-kamre-alam-a96735199/" target="_blank">
+              <i class="bx bxl-linkedin" style="color: #32d59e"></i>
+            </a>
+          </div>
+           <div class="text-center lg:text-left">
+          <div class=" lg:text-[20px] md:text-[18px] sm:text-[16px] text-[15px] font-medium text-center border-[2px] border-solid border-[#32d59e] h-fit w-fit lg:px-6 md:px-5 px-4 py-1 bg-[#32d59e] rounded-full inline-block">
+            <a href="#">More About Me</a>
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class=" hidden lg:inline h-96 w-96">
+          <img src="../images/PortFolio image.png" alt="" />
+        </div>
+      </div>
+      </div>
+      <hr class="mt-12" />
+      <!-- About Section -->
+       <div >
+        <h1 class="font-semibold text-center  lg:text-[60px] md:text-[50px] sm:text-[40px] text-[35px] text-[#ededed]" id="About">
+          About <span class="text-[#32d59e]">Me</span>
+        </h1>
+        <div class="flex mx-auto lg:w-[265px] md:w-[240px] sm:w-[200px] w-[180px] mt-1 mb-10 overflow-hidden rounded">
+          <div class="flex flex-1 h-2 bg-blue-200"></div>
+          <div class="flex-1 flex  h-2 bg-blue-400"></div>
+          <div class="flex-1 flex  h-2 bg-blue-600"></div>
+      </div>
+        <div class="flex flex-wrap items-center justify-center lg:justify-between lg:px-20 px-8 mt-16">
+          <div class="lg:w-1/2 ">
+            <img src="../images/PortFolio image.png" alt="" class=" lg:h-96 lg:w-96 md:h-72 md:w-72 w-64 h-64  " />
+          </div>
+          <div class="lg:w-1/2 text-[#ededed]">
+            <h2 class="text-center lg:text-left font-medium lg:text-[29px] md:text-[24px] sm:text-[22px] text-[20px] mb-2">Frontend Developer!</h2>
+            <p class="lg:text-[20px] md:text-[18px] sm:text-[16px] text-[15px] text-justify">
+            
+              I'm a skilled web designer with over a year of industry experience, specializing in frontend development. Passionate
+              about creating visually appealing and user-friendly websites, I stay current with design trends. My focus on UX/UI
+              principles ensures intuitive and seamless browsing experiences. I believe a well-designed website should not only look
+              good but also offer a smooth interaction. In each project, I meticulously research audience and client requirements,
+              delivering unique online experiences aligned with brand identity...
+            </p>
+            <div class="flex gap-5 mt-7 mb-7 justify-center lg:justify-start">
+              <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.facebook.com/profile.php?id=100080366996248" target="_blank">
+                <i class="bx bxl-facebook" style="color: #32d59e"></i>
+              </a>
+              <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.instagram.com/mdkamre6599/" target="_blank">
+                <i class="bx bxl-instagram" style="color: #32d59e"></i>
+              </a>
+              <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://github.com/kamre1" target="_blank">
+                <i class="bx bxl-github" style="color: #32d59e"></i>
+              </a>
+              <a class="flex justify-center items-center border-[2px] border-solid border-[#32d59e] rounded-full h-9 w-9" href="https://www.linkedin.com/in/md-kamre-alam-a96735199/" target="_blank">
+                <i class="bx bxl-linkedin" style="color: #32d59e"></i>
+              </a>
+            </div>
+  
+            <div class="text-center lg:text-left">
+              <div class="lg:text-[20px] md:text-[18px] sm:text-[16px] text-[15px] font-medium border-[2px] border-solid border-[#32d59e] h-fit w-fit lg:px-9 md:px-8 sm:px-7 px-6 py-1 bg-[#32d59e] rounded-full  inline-block">
+                <a href="../images/Kamre_SDE_Resume (2).pdf" target="_blank">Download CV</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+       </div>
+      <hr class="mt-5" />
+
+      <!-- Skill Section -->
+        <div>
+          <div class=" py-8" id="Skill">
+            <h1 class="font-semibold text-center  lg:text-[60px] md:text-[50px] sm:text-[40px] text-[35px] text-[#ededed]  ">
+              My <span class="text-[#32d59e]">Skills</span>
+            </h1>
+            <div class="flex mx-auto lg:w-[230px] md:w-[190px] sm:w-[170px] w-[130px] text-center mt-1 mb-10 overflow-hidden rounded">
+              <div class="flex-1 h-2  bg-blue-200">
+              </div>
+              <div class="flex-1 h-2  bg-blue-400">
+              </div>
+              <div class="flex-1 h-2  bg-blue-600">
+              </div>
+          </div>
+          <h2 class="text-[#ededed] text-center lg:text-left text-[20px] font-medium underline mt-5 pb-16 lg:px-20 px-8 ">Technical Skills</h2>
+            <div class="flex  flex-wrap lg:flex-nowrap justify-between gap-20 mb-8 lg:px-20 px-8">
+              <div class="w-full lg:w-[50%] mx-auto">
+                <!-- HTML Progress Bar -->
+                <div class="flex flex-col items-center lg:items-start ">
+                  <div class="flex items-center lg:items-start gap-2 w-full lg:w-[90%] md:w-[85%] sm:w-[75%]">
+                    <p><i class='bx bxl-html5' style='color:#b74263'></i></p>
+                    <div class="text-[#ededed]"> HTML</div>
+                  </div>
+                  <div class="bg-slate-500 h-2 w-[100%] rounded-full mb-10">
+                    <div class="bg-[#b74263] w-[90%] h-full font-bold text-[#000000] text-[9px] flex justify-center items-center">90%</div>
+                  </div>
+              
+                  <!-- CSS Progress Bar -->
+                  <div class="flex items-center lg:items-start gap-2 w-full lg:w-[90%] md:w-[85%] sm:w-[75%]">
+                    <p><i class='bx bxl-css3' style='color:#4246b7'></i></p>
+                    <div class="text-[#ededed]"> CSS</div>
+                  </div>
+                  <div class="bg-slate-500 h-2 w-[100%] rounded-full mb-10">
+                    <div class="bg-[#4246b7] w-[75%] h-full font-bold text-[#000000] text-[9px] flex justify-center items-center">75%</div>
+                  </div>
+              
+                  <!-- Tailwind CSS Progress Bar -->
+                  <div class="flex items-center lg:items-start gap-2 w-full lg:w-[90%] md:w-[85%] sm:w-[75%]">
+                    <p><i class='bx bxl-tailwind-css' style='color:#42b79e'></i></p>
+                    <div class="text-[#ededed]"> TAILWIND CSS</div>
+                  </div>
+                  <div class="bg-slate-500 h-2 w-[100%] rounded-full mb-10">
+                    <div class="bg-[#42b79e] w-[85%] h-full font-bold text-[#000000] text-[9px] flex justify-center items-center">85%</div>
+                  </div>
+              
+                  <!-- JavaScript Progress Bar -->
+                  <div class="flex items-center lg:items-start gap-2 w-full lg:w-[90%] md:w-[85%] sm:w-[75%]">
+                    <p><i class='bx bxl-javascript' style='color:#e4f04e'></i></p>
+                    <div class="text-[#ededed]"> JAVASCRIPT</div>
+                  </div>
+                  <div class="bg-slate-500 h-2 w-[100%] rounded-full mb-10">
+                    <div class="bg-[#e4f04e] w-[60%] h-full font-bold text-[#000000] text-[9px] flex justify-center items-center">60%</div>
+                  </div>
+              
+                  <!-- React JS Progress Bar -->
+                  <div class="flex items-center lg:items-start gap-2 w-full lg:w-[90%] md:w-[85%] sm:w-[75%]">
+                    <p><i class='bx bxl-react' style='color:#4edef0'></i></p>
+                    <div class="text-[#ededed]"> REACT JS</div>
+                  </div>
+                  <div class="bg-slate-500 h-2 w-[100%] rounded-full">
+                    <div class="bg-[#4edef0] w-[65%] h-full font-bold text-[#000000] text-[9px] flex justify-center items-center">65%</div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            <div class="flex items-center lg:items-start lg:w-[55%] w-[100%] ">
+              <p class=" text-[#ededed] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[15px] text-justify">
+                "I am proficient in HTML, CSS, and Tailwind CSS for creating clean and responsive user interfaces. My JavaScript skills enable me to add dynamic functionality to websites, while my expertise in React.js allows me to build interactive and efficient front-end applications. With a strong foundation in web development, I bring creativity and precision to every project, ensuring a seamless user experience.
+
+In addition to my technical skills, I am committed to staying abreast of emerging technologies and industry trends.
+                </p>
+            
+            </div>
+           </div>
+        </div>
+       <hr  />
+        
+       <!-- Education -->
+    
+         <div id="Education">
+          <h1 class="font-semibold text-center lg:text-[60px] md:text-[50px] sm:text-[40px] text-[35px] text-[#ededed]  ">
+            My <span class="text-[#32d59e]">Education</span>
+          </h1>
+          <div class="flex mx-auto lg:w-[368px] md:w-[320px] sm:w-[270px] w-[230px] text-center mt-1 mb-10 overflow-hidden rounded">
+            <div class="flex-1 h-2  bg-blue-200">
+            </div>
+            <div class="flex-1 h-2  bg-blue-400">
+            </div>
+            <div class="flex-1 h-2  bg-blue-600">
+            </div>
+        </div>
+  
+            <div class="w-full mx-auto lg:max-w-3xl">
+              <div class=" flex ">
+                  <div class="flex flex-col items-center w-10 mr-4 md:w-24">
+                      <div>
+                          <div
+                              class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
+                              <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
+                          </div>
+                      </div>
+                      <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
+                  </div>
+                  <div>
+                      <h2
+                          class="inline-block px-4 py-2 mb-4 text-xs font-medium text-gray-100 bg-gradient-to-r from-blue-500 to-blue-900 dark:from-blue-400 dark:to-blue-500 rounded-3xl dark:text-gray-100">
+                          August 2023</h2>
+                      <div
+                          class=" flex-1 mb-10 bg-white border-b-4 border-[#32d59e] shadow  rounded-3xl">
+                          <div class=" p-6">
+                              <p class="mb-2 lg:text-xl md:text-[18px] sm:text-[16px] text-[15px] font-bold ">Bachelor's Degree:</p>
+                              <p class="font-normal lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]">
+                                College/University: Loknayak Jai Prakash Institute Of Technplogy, Chapra, Bihar  <br>
+                                 Branch: Computer Science & Engineering <br>
+                                 Year of Passing: 2023 <br>
+                                 Marks Percentage: 74%<br>
+                                 
+  
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class=" flex ">
+                <div class="flex flex-col items-center w-10 mr-4 md:w-24">
+                    <div>
+                        <div
+                            class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
+                            <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
+                        </div>
+                    </div>
+                    <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
+                </div>
+                <div>
+                    <h2
+                        class="inline-block px-4 py-2 mb-4 text-xs font-medium text-gray-100 bg-gradient-to-r from-blue-500 to-blue-900 dark:from-blue-400 dark:to-blue-500 rounded-3xl dark:text-gray-100">
+                        May 2019</h2>
+                    <div
+                        class=" flex-1 mb-10 bg-white border-b-4 border-[#32d59e] shadow  rounded-3xl">
+                        <div class=" p-6">
+                            <p class="mb-2 lg:text-xl md:text-[18px] sm:text-[16px] text-[15px] font-bold ">Intermediate (12th):</p>
+                            <p class="font-normal lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]">
+                              College/University:Ritlal Surdeep Yadav Intermediate College, Muzaffarpur, Bihar  <br>
+                               Stream: Science  <br>
+                               Year of Passing: 2019 <br>
+                               Marks Percentage: 73%<br>
+                               
+  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex ">
+              <div class="flex flex-col items-center w-10 mr-4 md:w-24">
+                  <div>
+                      <div
+                          class="flex items-center justify-center w-8 h-8 bg-blue-200 rounded-full dark:bg-gray-600">
+                          <div class="w-4 h-4 bg-blue-600 rounded-full dark:bg-blue-400"></div>
+                      </div>
+                  </div>
+                  <div class="w-px h-full bg-blue-300 dark:bg-gray-600"></div>
+              </div>
+              <div>
+                  <h2
+                      class="inline-block px-4 py-2 mb-4 text-xs font-medium text-gray-100 bg-gradient-to-r from-blue-500 to-blue-900 dark:from-blue-400 dark:to-blue-500 rounded-3xl dark:text-gray-100">
+                      April 2016</h2>
+                  <div
+                      class=" flex-1 mb-10 bg-white border-b-4 border-[#32d59e] shadow  rounded-3xl">
+                      <div class=" p-6">
+                          <p class="mb-2 lg:text-xl md:text-[18px] sm:text-[16px] text-[15px] font-bold ">Matriculation (10th):</p>
+                          <p class="font-normal lg:text-[18px] md:text-[16px] sm:text-[15px] text-[14px]">
+                            School: Gandhi Janki High School,Bhatauna, Marwan, Muzaffarpur, Bihar 843113      <br>
+                             Year of Passing: 2016 <br>
+                            Marks Percentage: 62% <br>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+         </div>
+        <hr>
+        <!-- My Project -->
+         <div id="Project">
+          <h1 class="font-semibold text-center lg:text-[60px] md:text-[50px] sm:text-[40px] text-[35px] text-[#ededed]  ">
+            My <span class="text-[#32d59e]">Project</span>
+          </h1>
+            <div class="flex mx-auto lg:w-[290px] md:w-[250px] sm:w-[210px] w-[170px]  mt-1 mb-10 overflow-hidden rounded">
+                <div class="flex-1 h-2  bg-blue-200">
+                </div>
+                <div class="flex-1 h-2  bg-blue-400">
+                </div>
+                <div class="flex-1 h-2  bg-blue-600">
+                </div>
+            </div>
+  
+            <div class="flex flex-wrap items-center justify-center lg:justify-between lg:px-20  px-8 py-4">
+              <div class="w-[400px] h-auto rounded-3xl border-[2px] border-solid border-[#4dcaa0] overflow-hidden mb-4">
+                <img src="../images/HealthCRAD.jpg" alt="HealthCRAD Project" class="h-auto w-full rounded-t-3xl">
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold mb-2 text-[#ededed]">HealthCRAD Project</h2>
+                  <p class="text-gray-50">A comprehensive web platform for medical services, providing users with a one-stop solution for health-related information, appointment scheduling, and access to medical resources.</p>
+                  <!-- Add any additional project details here -->
+                  <button class="mt-16 bg-[#4dcaa0] text-white py-2 px-4 rounded-full">Read More</button>
+                </div>
+              </div>
+              <div class="w-[400px] h-auto rounded-3xl border-[2px] border-solid border-[#4dcaa0] overflow-hidden ">
+                <img src="../images/Home Service system.png" alt="HealthCRAD Project" class="h-auto w-full rounded-t-3xl">
+                <div class="p-4">
+                  <h2 class="text-xl font-semibold mb-2 text-[#ededed]">Home Service system Project</h2>
+                  <p class="text-gray-50">The user-friendly design ensures an intuitive navigation experience, allowing users to explore services effortlessly. The application integrates real-time notifications and scheduling features, enabling efficient communication between service providers and customers. </p>
+                  <!-- Add any additional project details here -->
+                  <button class="mt-4 bg-[#4dcaa0] text-white py-2 px-4 rounded-full">Read More</button>
+                </div>
+              </div>
+            </div>
+         </div>
+          <hr>
+
+          <!-- Contact us -->
+            <div id="Contact">
+              <h1 class="font-semibold text-center lg:text-[60px] md:text-[50px] sm:text-[40px] text-[35px]  text-[#ededed]  ">
+                Contact <span class="text-[#32d59e]">Us</span>
+                </h1>
+                  <div class="flex mx-auto lg:w-[287px] md:w-[247px] sm:w-[207px] w-[173px] mt-1 mb-10 overflow-hidden rounded">
+                      <div class="flex-1 h-2  bg-blue-200">
+                      </div>
+                      <div class="flex-1 h-2  bg-blue-400">
+                      </div>
+                      <div class="flex-1 h-2  bg-blue-600">
+                      </div>
+                  </div>
+                   <div class="flex flex-wrap items-center justify-center lg:justify-between">
+                     
+                     <div class="lg:px-20 px-8 w-2/3 mx-auto">
+                      <!-- <h1 class="text-[24px] text-gray-50 text-center border-[2px] border-solid border-[#32d59e] ">Feel Free to Contact Us</h1> -->
+                    <form>
+                      <!-- Name Input -->
+                      <div class="mb-4">
+                        <label for="name" class="block text-[#32d59e] text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#32d59e]" placeholder="Your Name" required>
+                      </div>
+                  
+                      <!-- Email Input -->
+                      <div class="mb-4">
+                        <label for="email" class="block text-[#32d59e]  text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#32d59e]" placeholder="Your Email" required>
+                      </div>
+                  
+                      <!-- Subject Input -->
+                      <div class="mb-4">
+                        <label for="subject" class="block text-[#32d59e] text-sm font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#32d59e]" placeholder="Subject" required>
+                      </div>
+                  
+                      <!-- Message Input -->
+                      <div class="mb-4">
+                        <label for="message" class="block text-[#32d59e]  text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:border-[#32d59e]" placeholder="Your Message" required></textarea>
+                      </div>
+                  
+                      <!-- Submit Button -->
+                      <button type="submit" class="w-full py-2 px-4 bg-[#32d59e] text-white rounded-md hover:bg-[#2cb48e] focus:outline-none focus:shadow-outline-[#2cb48e] mb-4">
+                        Submit
+                      </button>
+                    </form>
+                  </div>
+                   </div>
+            </div>
+          
+            <footer class="bg-[#32d59e] text-white text-center py-4">
+              <p>&copy; 2024 MKA. All rights reserved.</p>
+          </footer>
+      
+    </div>
+    <script src="main.js"></script>
+  </body>
